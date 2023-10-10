@@ -1,0 +1,80 @@
+REM   Script: Activity 4
+REM   Activity 4 on salesman
+
+create table salesman( 
+    salesman_id int, 
+    salesman_name varchar2(20), 
+    salesman_city varchar2(20), 
+    commissionint 
+);
+
+create table salesman( 
+    salesman_id int, 
+    salesman_name varchar2(20), 
+    salesman_city varchar2(20), 
+    commission int 
+);
+
+Desc salesman
+
+
+Alter table salesman add salesman_id to NOT NULL;
+
+Alter table salesman add salesman_id to salesman_id NOT NULL;
+
+Alter table salesman MODIFY (salesman_id int NOT NULL);
+
+Desc salesman
+
+
+insert into salesman values (5001,'James Hoog','New York',15);
+
+insert into salesman values (5002,'Nail Knite','Paris',13);
+
+insert into salesman values (5005,'Pit Alex','London',11);
+
+insert into salesman values (5006,'McLyon','Paris',14);
+
+insert into salesman values (5007,'Paul Adam','Rome',13);
+
+insert into salesman values (5003,'Lauson Hen','San Jose',12);
+
+select * from salesman;
+
+select * from salesman;
+
+select salesman_id,salesman_city from salesman;
+
+select * from salesman;
+
+select * from salesman where salesman_city = 'paris';
+
+select * from salesman;
+
+select * from salesman where salesman_city = 'Paris';
+
+select * from salesman;
+
+select salesman_id,commission from salesman where salesman_name = 'Paul Adam';
+
+select * from salesman;
+
+Alter table salesman add (grade int);
+
+desc salesman
+
+
+update salesman set grade = 100;
+
+select * from salesman;
+
+update salesman set grade = 200 where salesman_city = 'Rome';
+
+select * from salesman;
+
+update salesman set grade = 300 where salesman_name = 'James Hoog';
+
+select * from salesman;
+
+update salesman set salesman_name = 'pierre' where salesman_name = 'McLyon';
+
